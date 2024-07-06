@@ -1,0 +1,11 @@
+extends layout 
+
+block content 
+    h1 New Message
+    <form method="POST" action="/new">
+        label(for='authorName') Your Name
+        input(type='text' name='authorName')
+        label(for='messageText') Message
+        input(type='text' name='messageText')
+        button Submit
+    </form>
